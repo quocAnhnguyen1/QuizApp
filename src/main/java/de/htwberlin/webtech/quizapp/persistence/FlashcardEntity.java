@@ -1,4 +1,4 @@
-package de.htwberlin.webtech.persistence;
+package de.htwberlin.webtech.quizapp.persistence;
 
 import javax.persistence.*;
 
@@ -7,7 +7,7 @@ public class FlashcardEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private long id;
+    private Long id;
 
     @Column(name = "subject", nullable = false)
     private  String subject;
@@ -18,8 +18,7 @@ public class FlashcardEntity {
     @Column(name = "answer", nullable = false)
     private String answer;
 
-    public FlashcardEntity(long id, String subject, String question, String answer) {
-        this.id = id;
+    public FlashcardEntity(String subject, String question, String answer) {
         this.subject = subject;
         this.question = question;
         this.answer = answer;
@@ -28,7 +27,7 @@ public class FlashcardEntity {
     protected FlashcardEntity() {
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
