@@ -1,3 +1,4 @@
+[![CI](https://github.com/quocAnhnguyen1/QuizApp/actions/workflows/ci.yml/badge.svg)](https://github.com/quocAnhnguyen1/QuizApp/actions/workflows/ci.yml)
 # QuizApp
 
 Flashcard App im Quizstil
