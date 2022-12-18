@@ -11,6 +11,8 @@ public class FlashcardManipulationRequest {
         this.answer = answer;
     }
 
+    public FlashcardManipulationRequest() {}
+
     public String getSubject() {
         return subject;
     }
